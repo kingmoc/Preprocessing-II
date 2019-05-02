@@ -1,16 +1,24 @@
 .home {
 
+  .wrapper {
+
+    @media only screen and @mobile {
+      width: 90%;
+      margin: 0px auto;
+    }   
+  }
+
   .main {
     border-bottom: 2px dashed @navigation-border;
 
     @media only screen and @mobile {
-      width: 92%;
-      margin-left: 5%;
+      // width: 95%;
+      // margin: 0px auto;
     }   
     
     img {
       @media only screen and @mobile {
-        width: 98%;
+        // width: 98%;
       }  
     }
 
@@ -26,18 +34,19 @@
     justify-content: space-between;
     
     @media only screen and @mobile {
-        height: auto;
         flex-flow: column nowrap;
         align-items: center;
-      }   
+        // width: 95%;
+        // margin: 30px auto;
+    }   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
 
       @media only screen and @mobile {
-        width: 98%;
-        margin-left: 5%;
+        width: 100%;
+        // margin-left: 5%;
       }   
     }
 
@@ -47,7 +56,7 @@
 
       @media only screen and @mobile {
         width: 100%;
-        margin-left: 5%;
+        // margin-left: 3%;
       }   
 
       img {
@@ -62,6 +71,8 @@
 
     @media only screen and @mobile {
       flex-direction: column-reverse;
+      width: 100%;
+      // margin: 30px auto;
     }   
 
     .text-content {
@@ -74,7 +85,7 @@
       padding-left: 0;
 
       @media only screen and @mobile {
-        margin-left: 10%;
+        // margin-left: 10%;
       }  
     }
   }
@@ -82,10 +93,12 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
 
     @media only screen and @mobile {
-      width: 90%;
-      margin-left: 5%;
+      width: 100%;
+      // margin-left: 5%;
     }   
 
     img {
@@ -94,8 +107,6 @@
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 

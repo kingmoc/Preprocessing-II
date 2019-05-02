@@ -1,7 +1,6 @@
 // Navigation Styles here
 
 .nav {
-	// padding-bottom: 30px;
 	height: 75px;
 	border-bottom: 2px dashed @navigation-border;
 	
@@ -14,11 +13,14 @@
 		@media @mobile {
 			flex-direction: column;
 		}
-	
 	}
 
 	ul {
 		display: flex;
+
+		@media @mobile {
+			margin-bottom: 10px;
+		}
 	}
 
 	li {
