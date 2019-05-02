@@ -5,8 +5,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    
+    @media only screen and @mobile {
+        height: auto;
+        flex-flow: column nowrap;
+        align-items: center;
+      }   
     
     .text-content {
       width: 48%;
@@ -54,8 +58,20 @@
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      width: 29%;
       margin-bottom: 30px;
     }
+
+    .btn {
+      .buttons(#008080, white, 16px, 80%);
+    }
+  }
+
+  .main {
+    border-bottom: 2px dashed @navigation-border;
+
+    h2 {
+      margin-top: 30px;
+    } 
   }
 }// home
