@@ -2,7 +2,7 @@
 
   .wrapper {
 
-    @media only screen and @mobile {
+    @media @mobile {
       width: 90%;
       margin: 0px auto;
     }   
@@ -10,17 +10,6 @@
 
   .main {
     border-bottom: 2px dashed @navigation-border;
-
-    @media only screen and @mobile {
-      // width: 95%;
-      // margin: 0px auto;
-    }   
-    
-    img {
-      @media only screen and @mobile {
-        // width: 98%;
-      }  
-    }
 
     h2 {
       margin-top: 30px;
@@ -33,20 +22,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    @media only screen and @mobile {
+    @media @mobile {
         flex-flow: column nowrap;
         align-items: center;
-        // width: 95%;
-        // margin: 30px auto;
     }   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
 
-      @media only screen and @mobile {
+      @media @mobile {
         width: 100%;
-        // margin-left: 5%;
       }   
     }
 
@@ -54,9 +40,8 @@
       width: 48%;
       padding-left: 1%;
 
-      @media only screen and @mobile {
+      @media @mobile {
         width: 100%;
-        // margin-left: 3%;
       }   
 
       img {
@@ -69,10 +54,9 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media only screen and @mobile {
+    @media @mobile {
       flex-direction: column-reverse;
       width: 100%;
-      // margin: 30px auto;
     }   
 
     .text-content {
@@ -82,11 +66,7 @@
 
     .img-content {
       padding-right: 1%;
-      padding-left: 0;
-
-      @media only screen and @mobile {
-        // margin-left: 10%;
-      }  
+      padding-left: 0; 
     }
   }
 
@@ -96,9 +76,8 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed #C0C0C0;
 
-    @media only screen and @mobile {
+    @media @mobile {
       width: 100%;
-      // margin-left: 5%;
     }   
 
     img {
@@ -110,7 +89,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media only screen and @mobile {
+    @media @mobile {
       height: auto;
       flex-flow: column nowrap;
       align-items: center;
@@ -120,7 +99,7 @@
       width: 29%;
       margin-bottom: 30px;
 
-      @media only screen and @mobile {
+      @media @mobile {
         width: 75%;
         margin-left: 5%;
       }   
@@ -129,7 +108,7 @@
     .btn {
       .buttons(#008080, white, 16px, 80%);
 
-      @media only screen and @mobile {
+      @media @mobile {
         .buttons(#17a2b8, white, 16px, 100%);
       }   
     }

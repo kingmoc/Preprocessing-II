@@ -178,7 +178,7 @@ img {
   height: 100%;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .nav .nav-all {
     flex-direction: column;
   }
@@ -186,7 +186,7 @@ img {
 .nav ul {
   display: flex;
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .nav ul {
     margin-bottom: 10px;
   }
@@ -218,10 +218,6 @@ img {
 }
 .home .main {
   border-bottom: 2px dashed #C0C0C0;
-}
-@media only screen and (max-width: 500px) {
-}
-@media only screen and (max-width: 500px) {
 }
 .home .main h2 {
   margin-top: 30px;
@@ -276,8 +272,6 @@ img {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
-}
-@media only screen and (max-width: 500px) {
 }
 .home .content-destination {
   width: 75%;
